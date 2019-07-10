@@ -94,7 +94,7 @@ end
 # Usage: rake notify
 task :clearcache => ["clearcache:cloudfront"]
 desc "Clear caches"
-namespace :notify do
+namespace :clearcache do
   desc "Clear Cloudfront cache"
   task :cloudfront do
     begin
