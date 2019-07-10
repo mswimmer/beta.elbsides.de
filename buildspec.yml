@@ -15,6 +15,7 @@ phases:
   build:
     commands:
       - echo  Building and deploy beta at `date`
+      - bundle install
       - rake build
       - echo Build completed at `date`
 
