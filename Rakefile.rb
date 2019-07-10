@@ -87,6 +87,22 @@ namespace :notify do
   end
 end
 
+####################
+# Cache clearing
+####################
+
+# Usage: rake notify
+task :clearcache => ["clearcache:cloudfront"]
+desc "Clear caches"
+namespace :notify do
+  desc "Clear Cloudfront cache"
+  task :cloudfront do
+    begin
+      system "aws cloudfront create-invalidation --distribution-id E3B9GYIBSH2DE3 --paths \"/*\""
+    end
+  end
+end
+
 ###############
 # Testing tasks
 ###############
@@ -114,6 +130,6 @@ task :deploy => ["deploy:prod"]
 namespace :deploy do
   desc "Regenerate and sync production files, and notify services of the update"
   # task :prod => ["build", "s3_website", "notify"] do
-  task :prod => ["build", "s3_website"] do
+  task :prod => ["build", "s3_website", "clearcache"] do
   end
 end
