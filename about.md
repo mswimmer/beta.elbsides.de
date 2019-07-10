@@ -10,3 +10,5 @@ permalink: /about
 Elbsides is derived from the successful [HH.Security](https://www.meetup.com/hh-security/) Meetup and some of the organizers of [BSidesMunich](https://bsidesmunich.org). This is the first time this conference is taking place, but with a team experienced in organizing events and conferences, it is going to be a success.
 
 To find out more about what BSides events mean to participants, see [Security BSides' What does BSides mean to me](http://www.securitybsides.com/w/page/87930010/What%20BSides%20Means) page. Other BSides events are listed at the [Security Bsides' Front Page](http://www.securitybsides.com/w/page/12194156/FrontPage).
+
+Also check out the [main site](https://www.elbsides.de).
