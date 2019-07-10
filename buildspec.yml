@@ -8,6 +8,8 @@ env:
     
 phases:
   install:
+    runtime-versions:
+      ruby: 2.6
     commands:
       - gem install jekyll jekyll-paginate jekyll-sitemap jekyll-gist  html-proofer  jekyll-feed jemoji jekyll-include-cache
   build:
