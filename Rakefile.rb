@@ -110,7 +110,8 @@ end
 task :test do
   require 'html-proofer'
   sh "bundle exec jekyll build"
-  HTMLProofer.check_directory("./_site").run
+  options = { :empty_alt_ignore => true }
+  HTMLProofer.check_directory("./_site", options).run
 end
 
 ##################

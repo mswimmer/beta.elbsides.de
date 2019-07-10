@@ -26,4 +26,4 @@ phases:
     commands:
       - echo Deploying to S3 at `date`
       - rake deploy
-      - echo Deployment completed at `data`
+      - echo Deployment completed at `date`
