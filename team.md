@@ -32,6 +32,7 @@ After work he is wrapping his head around the fascinating inner lives of ELFs an
 ## Stefan ##
 
 ## Florian ##
+He likes testing things ... in various ways ;-)
 
 ## Ingo ##
 
